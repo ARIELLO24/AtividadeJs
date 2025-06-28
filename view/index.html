@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeBtn">🌙 Modo Escuro</button>
+
+    <div class="container">
+        <header>
+            <h1>Exercícios JavaScript</h1>
+            <p>Demonstração interativa dos conceitos básicos</p>
+        </header>
+
+        <!-- Ex. 1 - Boas-vindas -->
+        <section class="section">
+            <h2>1. Mensagem de Boas-vindas</h2>
+            <div class="flex">
+                <input type="text" id="userName" placeholder="Digite seu nome">
+                <button id="welcomeBtn">Mostrar mensagem</button>
+            </div>
+            <p id="welcomeMessage"></p>
+        </section>
+
+        <!-- Ex. 2 - Soma -->
+        <section class="section">
+            <h2>2. Calculadora Simples</h2>
+            <div class="flex">
+                <input type="number" id="num1" placeholder="Número 1" value="5">
+                <span>+</span>
+                <input type="number" id="num2" placeholder="Número 2" value="7" style="margin-left: 0.5rem;">
+                <button id="sumBtn" style="margin-left: 0.5rem;">Calcular</button>
+            </div>
+            <p>Resultado: <span id="sumResult"></span></p>
+        </section>
+
+        <!-- Ex. 3 - Mostrar/Esconder -->
+        <section class="section">
+            <h2>3. Alternar Visibilidade</h2>
+            <button id="toggleBtn">Mostrar/Esconder</button>
+            <p id="toggleText" class="hidden">Este texto pode ser mostrado ou escondido clicando no botão acima.</p>
+        </section>
+
+        <!-- Ex. 4 - Mudança de Cor -->
+        <section class="section">
+            <h2>4. Interação com Mouse</h2>
+            <p>Passe o mouse sobre a caixa abaixo para mudar sua cor</p>
+            <div id="colorBox"></div>
+        </section>
+
+        <!-- Ex. 5 - Digitação em tempo real -->
+        <section class="section">
+            <h2>5. Digitação em Tempo Real</h2>
+            <input type="text" id="realTimeInput" placeholder="Digite algo aqui...">
+            <p>Você está digitando: <span id="realTimeOutput"></span></p>
+        </section>
+
+        <!-- Ex. 6 - Lista de Tarefas -->
+        <section class="section">
+            <h2>6. Lista de Tarefas</h2>
+            <div class="flex">
+                <input type="text" id="taskInput" placeholder="Nova tarefa">
+                <button id="addTaskBtn">Adicionar</button>
+            </div>
+            <ul id="taskList"></ul>
+        </section>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
